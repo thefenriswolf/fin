@@ -2,7 +2,7 @@
 
 buildGoModule rec {
   pname = "gopta";
-  version = "v20240326";
+  version = "v20240331";
 
   src = fetchFromGitHub {
     owner = "thefenriswolf";
@@ -10,7 +10,7 @@ buildGoModule rec {
     rev = "${version}";
     hash = "sha256-vZcCOl2V6sP10nbdiaF85CiPJaPY+QG+ERKRAbPx3yY=";
   };
-  vendorHash = "sha256-ekZ5rRbvD8U+UEfqWbPCZ9v++ZDTpAuU3LT9hWlwC5Q=";
+  vendorHash = "";
 
   meta = with lib; {
     description = "Time Tracker Tool written in Golang";
